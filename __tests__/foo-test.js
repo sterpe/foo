@@ -7,9 +7,9 @@
 
 'use strict'
 
-const file = '../'
+const FILE = '../'
 
-jest.dontMock(file)
+jest.dontMock(FILE)
 
 describe([
   'foo'
@@ -17,7 +17,7 @@ describe([
   it([
     'should export the empty object'
   ].join(' '), function () {
-    const foo = require(file)
+    const foo = require(FILE)
 
     expect(foo).toEqual({})
   })
